@@ -12,6 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^7.2.0",
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
