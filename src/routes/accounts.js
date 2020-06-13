@@ -5,5 +5,11 @@ module.exports = app => {
         res.status(201).json(result[0])
     }
 
-    return {create}
+    const getAll = async (req, res) => {
+        const result = await app.services.account.findAll()
+
+        res.status(200).json(result)
+    }
+
+    return {create, getAll}
 }
